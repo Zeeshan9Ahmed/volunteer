@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile View</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-carousel.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css" />
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-default fixed-top">
+
+        <a class="navbar-brand" href="#">
+            <img src="images/TRANSPARENT_LOGO.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item  ">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="events.html">Event</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-us.html">Contact</a>
+                </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="volunteer.html">Volunteer</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="feed.html">Feed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="post_oppoutunities.html">Post Opportunity</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="organization_list.html">Organizations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+               
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a class=" btn btn-outline-success my-2 my-sm-0 login-btn" href="sign_in_one.html"
+                    style="border: none;font-weight: 700;color: black;">Sign In</a>
+                <a class=" btn btn-outline-success my-2 my-sm-0" href="sign_up_two.html"
+                    style="border-radius: 30px;background: green;color: white;">Sign Up</a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/sample image-29.png" alt="" height="35" width="35"
+                                style="border-radius: 50%;">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 12px;">
+                            <a class="dropdown-item" href="profile.html">View Profile</a>
+                             <a class="dropdown-item" href="my_opportunities.html">My Opportunities</a>
+                          <a class="dropdown-item" href="my_volunteers.html">My Volunteers</a>
+                           <a class="dropdown-item" href="my_category.html">My Category</a> 
+                            <a class="dropdown-item" href="index.html">LogOut</a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="hero-banner">
+        <div class="container">
+            <div class="hero-banner-text">
+                <div class="hero-banner-heading">
+                    My Profile
+                </div>
+
+                <button type="button" class="btn btn-warning text-dark btn-banner"><i class="fas fa-play"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="profile-edit">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="profile-image">
+                        <img src="images/sample image-8.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="profile_name_text">
+                        <h4>Organization Name <i class="fas fa-calendar-alt"></i><span>Joined by May 2020</span></h4>
+                        <p><i class="fas fa-map-marked-alt"></i> Address of  Organization   will come, here</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-2">
+                    <div class="profile-right2">
+                        <i class="fas fa-camera" style="opacity: 0;" ></i>
+                        <button class="btn btn-danger">Subscribe</button>
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+
+    </style>
+
+
+    <section class="about-me-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="me-card1">
+                        <div class="me-card1-edit">
+                            <h4>About  :</h4> 
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ad nulla aspernatur ipsa
+                            accusamus rem dolor laudantium delectus facilis facere neque laborum, nam corrupti.
+                        </p>
+                    </div>
+
+                    <div class="me-card2">
+                        <h4>CONTACT THROUGH SOCIAL MEDIA</h4>
+                        <h5>Drop a messaage:</h5>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+                <div class="col-md-6" style="text-align: right;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29527.103112470882!2d91.79791225!3d22.32007935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1647893915604!5m2!1sen!2sbd"
+                        width="400" height="400" style="border:0;border-radius:10px;margin-top: 20px;"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+
+    </style>
+
+
+    <section class="services-group">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="service-box">
+                        <p>Services</p>
+                        <div class="services">
+                            <button>Vehical Maintenence</button>
+                            <button>Garden Maintencece</button>
+                            <button>Office Maintencece</button>
+                            <button>Computer Repair</button>
+                            <button>Mobile Repair</button>
+                            <button>Home Maintanence</button>
+                            <button>Washroom Repair</button>
+                            <button>Kitchen Repair</button>
+                            <button>Furniture Work</button>
+                            <button>Home Maintance</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <style>
+
+
+    </style>
+
+    <section class="photo-gallery-group">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="photo-gallery-box">
+                        <p>Photo Gallery</p>
+                        <div class="Photo-gallery">
+                            <img src="images/sample image-1.png" alt="">
+                            <img src="images/sample image-10.png" alt="">
+                            <img src="images/sample image-11.png" alt="">
+                            <img src="images/sample image-13.png" alt="">
+                            <img src="images/sample image-14.png" alt=""> <br>
+                            <img src="images/sample image-15.png" alt="">
+                            <img src="images/sample image-16.png" alt="">
+                            <img src="images/sample image-17.png" alt="">
+                            <img src="images/sample image-18.png" alt="">
+                            <img src="images/Group 1.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="feed-message">
+                    <div class="feed-search input-group">
+                        <div class="input-group-append">
+                            <select class="input-group-text"  style="font-size: 12px;padding: 5px;">
+                                <option>Select Category</option>
+                                <option>Category 1</option>
+                                <option>Category 2</option>
+                                <option>Category 3</option>
+                                <option>Category 4</option>
+                              </select>
+                        </div>
+                        <div class="input-group-append">
+                            <select class="input-group-text"  style="font-size: 12px;padding: 5px;">
+                                <option>Date</option>
+                                <option>21/12/2004</option>
+                                <option>21/12/2012</option>
+                          
+                                <option>.....</option> 
+                              </select>
+                        </div>
+                       
+                         
+                        <input type="text" class="form-control" placeholder="What are you looking for?"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                        </div>
+                        <br>
+                    
+                    </div>
+                    <div class="keywords">
+                        Keywords: &nbsp;&nbsp;&nbsp;
+                        <button class="keybtn">Help</button>
+                        <button class="keybtn">Hospital</button>
+                        <button class="keybtn">MArket</button>
+                        <button class="keybtn">Journey</button>
+                    </div>
+
+                    <div class="feed-message-card">
+                        <div class="feed-date">
+                            <p class="f-date">7-12-2021</p>
+                            <p>2 Likes <i class="fas fa-heart"></i></p>
+                        </div>
+                        <div class="feed-card-image">
+                            <img src="images/sample image-1.png" alt="">
+                            <div class="image-aside-text">
+                                <h4>Organization 1</h4>
+                                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing. <span>more</span> </p>
+                            </div>
+                        </div>
+                        <div class="feed-card-bottom">
+                            <div class="feed-icon-set">
+                                <p><i class="fas fa-location-arrow"></i> Le bardo </p>
+                                <p><i class="fas fa-heart"></i> Likes </p>
+                                <p><i class="fas fa-share"></i> Likes </p>
+                            </div>
+                            <div class="feed-button">
+                                 <button class="btn btn-success"> <i class="fas fa-check"></i> Apply</button> 
+                                <button class="more-btn"><i class="fas fa-book"></i> Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="feed-message-card">
+                        <div class="feed-date">
+                            <p>7-12-2021</p>
+                            <p>2 Likes <i class="fas fa-heart"></i></p>
+                        </div>
+                        <div class="feed-card-image">
+                            <img src="images/sample image-1.png" alt="">
+                            <div class="image-aside-text">
+                                <h4>Organization 1</h4>
+                                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing. <span>more</span> </p>
+                            </div>
+                        </div>
+                        <div class="feed-card-bottom">
+                            <div class="feed-icon-set">
+                                <p><i class="fas fa-location-arrow"></i> Le bardo </p>
+                                <p><i class="fas fa-heart"></i> Likes </p>
+                                <p><i class="fas fa-share"></i> Likes </p>
+                            </div>
+                            <div class="feed-button">
+                                 <button class="btn btn-success"> <i class="fas fa-check"></i> Apply</button>
+                                <button class="more-btn"><i class="fas fa-book"></i> Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="feed-message-card">
+                        <div class="feed-date">
+                            <p>7-12-2021</p>
+                            <p>2 Likes <i class="fas fa-heart"></i></p>
+                        </div>
+                        <div class="feed-card-image">
+                            <img src="images/sample image-1.png" alt="">
+                            <div class="image-aside-text">
+                                <h4>Organization 1</h4>
+                                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing. <span>more</span> </p>
+                            </div>
+                        </div>
+                        <div class="feed-card-bottom">
+                            <div class="feed-icon-set">
+                                <p><i class="fas fa-location-arrow"></i> Le bardo </p>
+                                <p><i class="fas fa-heart"></i> Likes </p>
+                                <p><i class="fas fa-share"></i> Likes </p>
+                            </div>
+                            <div class="feed-button">
+                                 <button class="btn btn-success"> <i class="fas fa-check"></i> Apply</button>
+                                <button class="more-btn"><i class="fas fa-book"></i> Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="feed-message-card">
+                        <div class="feed-date">
+                            <p>7-12-2021</p>
+                            <p>2 Likes <i class="fas fa-heart"></i></p>
+                        </div>
+                        <div class="feed-card-image">
+                            <img src="images/sample image-1.png" alt="">
+                            <div class="image-aside-text">
+                                <h4>Organization 1</h4>
+                                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing. <span>more</span> </p>
+                            </div>
+                        </div>
+                        <div class="feed-card-bottom">
+                            <div class="feed-icon-set">
+                                <p><i class="fas fa-location-arrow"></i> Le bardo </p>
+                                <p><i class="fas fa-heart"></i> Likes </p>
+                                <p><i class="fas fa-share"></i> Likes </p>
+                            </div>
+                            <div class="feed-button">
+                                 <button class="btn btn-success"> <i class="fas fa-check"></i> Apply</button>
+                                <button class="more-btn"><i class="fas fa-book"></i> Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="feed-message-card">
+                        <div class="feed-date">
+                            <p>7-12-2021</p>
+                            <p>2 Likes <i class="fas fa-heart"></i></p>
+                        </div>
+                        <div class="feed-card-image">
+                            <img src="images/sample image-1.png" alt="">
+                            <div class="image-aside-text">
+                                <h4>Organization 1</h4>
+                                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing. <span>more</span> </p>
+                            </div>
+                        </div>
+                        <div class="feed-card-bottom">
+                            <div class="feed-icon-set">
+                                <p><i class="fas fa-location-arrow"></i> Le bardo </p>
+                                <p><i class="fas fa-heart"></i> Likes </p>
+                                <p><i class="fas fa-share"></i> Likes </p>
+                            </div>
+                            <div class="feed-button">
+                                 <button class="btn btn-success"> <i class="fas fa-check"></i> Apply</button>
+                                <button class="more-btn"><i class="fas fa-book"></i> Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="feed-message-card">
+                        <div class="feed-date">
+                            <p>7-12-2021</p>
+                            <p>2 Likes <i class="fas fa-heart"></i></p>
+                        </div>
+                        <div class="feed-card-image">
+                            <img src="images/sample image-1.png" alt="">
+                            <div class="image-aside-text">
+                                <h4>Organization 1</h4>
+                                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing. <span>more</span> </p>
+                            </div>
+                        </div>
+                        <div class="feed-card-bottom">
+                            <div class="feed-icon-set">
+                                <p><i class="fas fa-location-arrow"></i> Le bardo </p>
+                                <p><i class="fas fa-heart"></i> Likes </p>
+                                <p><i class="fas fa-share"></i> Likes </p>
+                            </div>
+                            <div class="feed-button">
+                                 <button class="btn btn-success"> <i class="fas fa-check"></i> Apply</button>
+                                <button class="more-btn"><i class="fas fa-book"></i> Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+
+    </style>
+
+    <section class="banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+                    <button class="btn btn-primary">Contact</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+
+    </style>
+
+
+    <section class="profile-form" style="padding-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="form-heading-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro delectus sed.
+                    </h3>
+                </div>
+            </div>
+            <form action="">
+                <div class="message-form">
+
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-md-6 formm-group">
+                            <input type="text" class="form-control" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <textarea name="" id="" cols="30" rows="5" class="form-control"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+
+                            <button class="btn btn-primary">Send Message</button>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer-04">
+        <div class="container" style="padding-bottom: 6em;">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h2 class="footer-heading"><a href="#" class="logo"><img src="images/logo.jpg" alt=""></a></h2>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h2 class="footer-heading">Categories</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="py-1 d-block">Buy &amp; Sell</a></li>
+                        <li><a href="#" class="py-1 d-block">Merchant</a></li>
+                        <li><a href="#" class="py-1 d-block">Giving back</a></li>
+                        <li><a href="#" class="py-1 d-block">Help &amp; Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14763.537593284394!2d91.81770479828492!3d22.320211343637336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1647808645463!5m2!1sen!2sbd"
+                        width="100%" height="250px" style="border:0; border-radius: 10px;" allowfullscreen=""
+                        loading="lazy"></iframe>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h2 class="footer-heading">Follow us</h2>
+
+
+                    <i class="fab fa-facebook-f" style="color: white;font-size: 20px; margin-right: 20px;"></i>
+                    <i class="fab fa-instagram" style="color: white;font-size: 20px; margin-right: 20px;"></i>
+                    <i class="fab fa-youtube" style="color: white;font-size: 20px; margin-right: 20px;"></i>
+                    <i class="fab fa-twitter" style="color: white;font-size: 20px; margin-right: 20px; "></i>
+
+                </div>
+            </div>
+        </div>
+        <div class="w-100 mt-5 border-top py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <p class="copyright">
+                            All right reserved by helpvilla
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <div class="modal fade" id="ChangeImageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Change Image</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                aria-describedby="inputGroupFileAddon01">
+                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="modal fade" id="EditProfileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Update</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- <div class="form-group  ">
+                            <label for="inputState">Choose Type</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>Organization</option>
+                                <option>Volunteer</option>
+                            </select>
+                        </div> -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Name</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Phone</label>
+                                <input type="text" class="form-control" id="inputPassword4" placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Address1</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Address1">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Address2</label>
+                                <input type="text" class="form-control" id="inputPassword4" placeholder="Address2">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1"> About</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+
+                             <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Social Links 1</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Social Links 1">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Social Links 2</label>
+                                    <input type="text" class="form-control" id="inputPassword4" placeholder="Social Links 2 ">
+                                </div>
+                            </div>
+                          
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="#">Create</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/jquery 3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/universal_tilt.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js">
+    </script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+        integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-success my-2 my-sm-0 login-btn" type="submit">Sign In</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </nav>
+
+
+    <div class="hero-banner">
+        <div class="container">
+            <div class="hero-banner-text">
+                <div class="hero-banner-heading">
+                  We Are Activating 100 Milion <br> Volunters by 2025
+                </div>
+               <button class="for-more-btn">Sign Up for More</button>
+                <button type="button" class="btn btn-warning text-dark btn-banner"><i class="fas fa-play"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <style>
+        section.logo-heading-area img {
+    width: 200px;
+}
+.logo-heading-area{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+@media (max-width:768px) {
+    section.logo-heading-area img {
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+}
+    </style>
+
+    <section class="logo-heading-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="/images/logo1.png" alt="">
+                    <img src="/images/logo2.png" alt="">
+                    <img src="/images/logo3.png" alt="">
+                    <img src="/images/logo4.png" alt="">
+                    <img src="/images/logo5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  
+
+
+
+
+
+    <style>
+        .view-event {
+            /* padding: 40px; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .event-header {}
+
+        .view-event button {
+            background-color: transparent;
+            border-radius: 10px;
+            color: rgb(36, 113, 255);
+            height: 50px;
+            border: 1px solid rgb(36, 113, 255);
+        }
+        .view-event-section{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        @media (max-width:768px) {
+    .event-header h4{
+        font-size: 20px;
+    }
+    .event-header p{
+        font-size: 14px;
+        width: 300px;
+    }
+    .view-event-section button{
+        
+        font-size: 12px;
+    }
+}
+    </style>
+
+    <section class="view-event-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="view-event">
+                        <div class="event-header">
+                            <h4>JOIN HelpVille</h4>
+                            <p>Millions of people across the impact sector trust HelpVille</p>
+                        </div>
+                        <button class=" btn btn-primary">JOIN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    .contact-join-form input{
+        height: 50px;
+        background-color: #f5f5f5;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .contact-join-form textarea{
+        background-color: #f5f5f5;
+        border: none;
+        border-radius: 10px;
+    }
+    .contact-join-form button{
+        margin-top: 30px;
+    }
+    .contact-join-form{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+</style>
+
+    <section class="contact-join-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <button class="btn btn-primary">Send message</button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+                <div class="col-md-6" style="text-align: right;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14763.537593284394!2d91.81770479828492!3d22.320211343637336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1647808645463!5m2!1sen!2sbd" width="400px" height="250px" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+<style>
+    .drop-message-section{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .drop-group{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .drop-group-content i{
+        font-size: 40px;
+        color: #1a75bb;
+    }
+    .drop-group-content h6{
+        font-weight: 700;
+    }
+    .drop-group-content p{
+        margin-left: 35px;
+        line-height: 0;
+    }
+
+    .drop-header h4{
+        font-size: 40px;
+        font-weight: 300;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #1a75bb;
+    }
+    .drop-header h5{
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .drop-header p{
+        margin-bottom: 50px;
+    }
+</style>
+
+
+
+
+<section class="drop-message-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 drop-header">
+                <h4>LET'S TALK US</h4>
+                <h5>Drop A Message</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae reiciendis <br>
+                     error ipsum temporibus tenetur labore</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="drop-group">
+                    <div class="drop-group-content">
+                        <h6><i class="fas fa-map-marker-alt"></i> Office</h6>
+                        <p>Office Location in Saudi Arabia</p>
+                    </div>
+
+                    <div class="drop-group-content">
+                        <h6><i class="fas fa-phone-volume"></i> Call Center</h6>
+                        <p>888.875.9900</p>
+                    </div>
+
+                    <div class="drop-group-content">
+                        <h6><i class="fas fa-envelope"></i> Office</h6>
+                        <p>userone@mail.com</p>
+                        <p>userone@mail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        .header-comment-area img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+        }
+
+        .header-comment-area {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .header-comment-area h5 {
+            margin-left: 20px;
+            font-weight: 700;
+        }
+
+        .comment-area p {
+            margin-top: 30px;
+        }
+
+        .comment-area {
+            border: 2px solid #1a75bb2e;
+            border-radius: 10px;
+            padding: 30px;
+            width: auto;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .comment-areas {
+            padding: 35px;
+        }
+
+        .comment-text {
+            padding-top: 40px;
+            margin-bottom: -40px;
+            padding-left: 40px;
+        }
+    </style>
+
+
+
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row" >
+                <div class="col-6">
+                    <h6 class="mb-3">Trusted By</h6>
+                    <h3 class="mb-3">Heathcare Professional</h3>
+                </div>
+                <div class="col-6 text-right">
+                    <a class="btn btn-primary mb-3 mr-1" style=" BACKGROUND: #dbeeff; border: none;"
+                        href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2"
+                        style="BACKGROUND: #dbeeff; border: none;" role="button" data-slide="next">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel"
+                        data-interval="2000">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+
+                                    <div class="col-md-6 mb-3">
+                                        <div class="comment-area">
+                                            <div class="header-comment-area">
+                                                <img src="/images/sample image-11.png" alt="">
+                                                <h5>John Linkon</h5>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natu
+                                                excepturi est iusto explicabo consectetur, sapiente aperiam.
+                                                Amet quae alias est magnam quisquam ea rem,
+                                                debitis quis officia natus corrupti molestias.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="comment-area">
+                                            <div class="header-comment-area">
+                                                <img src="/images/sample image-12.png" alt="">
+                                                <h5>John Linkon</h5>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natu
+                                                excepturi est iusto explicabo consectetur, sapiente aperiam.
+                                                Amet quae alias est magnam quisquam ea rem,
+                                                debitis quis officia natus corrupti molestias.</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-6 mb-3">
+                                        <div class="comment-area">
+                                            <div class="header-comment-area">
+                                                <img src="/images/1.jpg" alt="">
+                                                <h5>John Linkon</h5>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natu
+                                                excepturi est iusto explicabo consectetur, sapiente aperiam.
+                                                Amet quae alias est magnam quisquam ea rem,
+                                                debitis quis officia natus corrupti molestias.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="comment-area">
+                                            <div class="header-comment-area">
+                                                <img src="/images/1.jpg" alt="">
+                                                <h5>John Linkon</h5>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natu
+                                                excepturi est iusto explicabo consectetur, sapiente aperiam.
+                                                Amet quae alias est magnam quisquam ea rem,
+                                                debitis quis officia natus corrupti molestias.</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-6 mb-3">
+                                        <div class="comment-area">
+                                            <div class="header-comment-area">
+                                                <img src="/images/1.jpg" alt="">
+                                                <h5>John Linkon</h5>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natu
+                                                excepturi est iusto explicabo consectetur, sapiente aperiam.
+                                                Amet quae alias est magnam quisquam ea rem,
+                                                debitis quis officia natus corrupti molestias.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="comment-area">
+                                            <div class="header-comment-area">
+                                                <img src="/images/1.jpg" alt="">
+                                                <h5>John Linkon</h5>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natu
+                                                excepturi est iusto explicabo consectetur, sapiente aperiam.
+                                                Amet quae alias est magnam quisquam ea rem,
+                                                debitis quis officia natus corrupti molestias.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="footer-04" >
+        <div class="container" style="padding-bottom: 6em;">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h2 class="footer-heading"><a href="#" class="logo"><img src="/images/logo.jpg"  alt=""></a></h2>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h2 class="footer-heading">Categories</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="py-1 d-block">Buy &amp; Sell</a></li>
+                        <li><a href="#" class="py-1 d-block">Merchant</a></li>
+                        <li><a href="#" class="py-1 d-block">Giving back</a></li>
+                        <li><a href="#" class="py-1 d-block">Help &amp; Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14763.537593284394!2d91.81770479828492!3d22.320211343637336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1647808645463!5m2!1sen!2sbd" width="100%" height="250px" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h2 class="footer-heading">Follow us</h2>
+                   
+                   
+                        <i class="fab fa-facebook-f" style="color: white;font-size: 20px; margin-right: 20px;"></i>
+                        <i class="fab fa-instagram" style="color: white;font-size: 20px; margin-right: 20px;"></i>
+                        <i class="fab fa-youtube" style="color: white;font-size: 20px; margin-right: 20px;"></i>
+                        <i class="fab fa-twitter" style="color: white;font-size: 20px; margin-right: 20px; "></i>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="w-100 mt-5 border-top py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <p class="copyright">
+                            All right reserved by helpvilla
+                        </p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/js/jquery 3.5.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/universal_tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+    </script>
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
