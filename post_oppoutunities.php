@@ -32,70 +32,7 @@
     
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-default fixed-top">
-
-        <a class="navbar-brand" href="#">
-            <img src="images/TRANSPARENT_LOGO.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item  ">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-               <li class="nav-item">
-                    <a class="nav-link" href="events.html">Event</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact-us.html">Contact</a>
-                </li>
-               <li class="nav-item">
-                    <a class="nav-link" href="volunteer.html">Volunteer</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="feed.html">Feed</a>
-                </li>
-               
-               
-                <li class="nav-item active">
-                    <a class="nav-link" href="post_oppoutunities.html">Post Opportunity</a>
-                </li>
-               
-                <li class="nav-item">
-                    <a class="nav-link" href="organization_list.html">Organizations</a>
-                </li>
-                 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-               
-
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-               <a class=" btn btn-outline-success my-2 my-sm-0 login-btn" href="sign_in_one.html" style="border: none;font-weight: 700;color: black;">Sign In</a>
-                 <a class=" btn btn-outline-success my-2 my-sm-0" href="sign_up_two.html" style="border-radius: 30px;background: green;color: white;">Sign Up</a>
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="images/sample image-29.png" alt="" height="35" width="35" style="border-radius: 50%;">
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 12px;">
-                            <a class="dropdown-item" href="profile.html">View Profile</a>
-                             <a class="dropdown-item" href="my_opportunities.html">My Opportunities</a>
-                          <a class="dropdown-item" href="my_volunteers.html">My Volunteers</a>
-                           <a class="dropdown-item" href="my_category.html">My Category</a>  
-                            <a class="dropdown-item" href="index.html">LogOut</a>
-                        </div>
-                    </li>
-                </ul>
-            </form>
-        </div>
-    </nav>
+   <?php include_once('assets/nav-bar.php');?>
 
 
     <div class="hero-banner">
@@ -119,15 +56,15 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="post-app-form">
-                        <form>
+                        <form method="POST" action="Controller/PostOpportunity.php">
     
                             <div class="form-row">
                                 <div class="col-md-6 mb-3 form-row-height">
-                                    <label for="validationDefault01">Date</label>
+                                    <label for="validationDefault01">Start Date</label>
 
 
                                     <div class="input-group mb-3 date" id='datepicker'>
-                                        <input type="text" class="form-control" placeholder="dd-mm-yyyy" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <input type="date" class="form-control" name="start_date" placeholder="dd-mm-yyyy" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
                                           <span class="input-group-text" id="basic-addon2"><span class="fas fa-calendar"></span></span>
                                         </div>
@@ -136,9 +73,9 @@
                                    
                                 </div>
                                 <div class="col-md-6 mb-3 form-row-height">
-                                    <label for="validationDefault02">Date</label>
+                                    <label for="validationDefault02">End Date</label>
                                     <div class="input-group mb-3 date" id='datepicker2'>
-                                        <input type="text" class="form-control" placeholder="dd-mm-yyyy" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <input type="date" class="form-control" name="end_date" placeholder="dd-mm-yyyy" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
                                           <span class="input-group-text" id="basic-addon2"><span class="fas fa-calendar"></span></span>
                                         </div>
@@ -149,33 +86,49 @@
                             <div class="form-row">
                                 <div class="col-md-6 mb-3 form-row-height">
                                     <label for="validationDefault01">Name of the event</label>
-                                    <input type="text" class="form-control" id="validationDefault01" value="Mark"
+                                    <input type="text" class="form-control" name="name" id="validationDefault01" value="Mark"
                                         required>
                                 </div>
                                 <div class="col-md-6 mb-3 form-row-height">
                                     <label for="validationDefault02">Category</label>
-                                    <input type="text" class="form-control" id="validationDefault02" value="Otto"
-                                        required>
+                                    <select class="form-control" name="category_id" id="cars">
+                                        <option value="1">Volvo</option>
+                                        <option value="2">Saab</option>
+                                        <option value="3">Opel</option>
+                                        <option value="4">Audi</option>
+                                    </select>
                                 </div>
                             </div>
     
                             <div class="form-row">
                                 <div class="col-md-6 mb-3 form-row-height">
                                     <label for="validationDefault01">How many volunteer needed</label>
-                                    <input type="text" class="form-control" id="validationDefault01" value="Mark"
+                                    <input type="number" class="form-control" name="no_of_volunteers" id="validationDefault01" value="Mark"
                                         required>
                                 </div>
                                 <div class="col-md-6 mb-3 form-row-height">
                                     <label for="validationDefault02">Location</label>
-                                    <input type="text" class="form-control" id="validationDefault02" value="Otto"
+                                    <input type="text" class="form-control" name="location" id="validationDefault01" value="Mark"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3 form-row-height">
+                                    <label for="validationDefault01">Opportunity Type</label>
+                                    <select class="form-control" name="type_id" id="cars">
+                                        <option value="1">Volvo</option>
+                                        <option value="2">Saab</option>
+                                        <option value="3">Opel</option>
+                                        <option value="4">Audi</option>
+                                    </select>
+                                </div>
+                               
                             </div>
     
                             <div class="form-row">
                                 <div class="col-md-8 mb-3 form-row-height">
                                     <label for="validationDefault01">Detailed Description</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                                    <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="4"></textarea>
                                 </div>
                                 <div class="col-md-4"></div>
                             </div>
@@ -206,7 +159,7 @@
     
                             <div class="form-row ">
                                 <div class="col-md-12 form-row-height">
-                                    <button class="btn btn-success post-btn">Post Now</button>
+                                    <button class="btn btn-success post-btn" type="submit" name="submit">Post Now</button>
     
                                 </div>
                             </div>
